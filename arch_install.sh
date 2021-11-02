@@ -102,7 +102,7 @@ ln -s ~/.config/shell/profile .zprofile
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 mv ~/.oh-my-zsh ~/.config/zsh/oh-my-zsh
 rm ~/.zshrc ~/.zsh_history
-mkdir -p ~/dl ~/vids ~/music ~/dox ~/code ~/pix/ss
+mkdir -p ~/lg ~/vids ~/mus ~/doc ~/code ~/pix/wallpapers ~/tmp ~/drive ~/ead
 alias dots='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 dots config --local status.showUntrackedFiles no
 exit
