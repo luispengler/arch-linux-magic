@@ -27,20 +27,20 @@ exit
 #part2
 ln -sf /usr/share/zoneinfo/America/Campo_Grande /etc/localtime
 hwclock --systohc
-echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen
+echo "en_US.UTF-8 UTF-8" > /etc/locale.gen
 echo "pt_BR.UTF-8 UTF-8" >> /etc/locale.gen
 locale-gen
 echo "LANG=en_US.UTF-8" > /etc/locale.conf
-echo "LC_NUMERIC=pt_BR.UTF-8" > /etc/locale.conf
-echo "LC_TIME=pt_BR.UTF-8" > /etc/locale.conf
-echo "LC_MONETARY=pt_BR.UTF-8" > /etc/locale.conf
-echo "LC_PAPER=pt_BR.UTF-8" > /etc/locale.conf
-echo "LC_NAME=pt_BR.UTF-8" > /etc/locale.conf
-echo "LC_ADDRESS=pt_BR.UTF-8" > /etc/locale.conf
-echo "LC_TELEPHONE=pt_BR.UTF-8" > /etc/locale.conf
-echo "LC_MEASUREMENT=pt_BR.UTF-8" > /etc/locale.conf
-echo "LC_IDENTIFICATION=pt_BR.UTF-8" > /etc/locale.conf
-echo "KEYMAP=br-abnt2" > /etc/vconsole.conf
+echo "LC_NUMERIC=pt_BR.UTF-8" >> /etc/locale.conf
+echo "LC_TIME=pt_BR.UTF-8" >> /etc/locale.conf
+echo "LC_MONETARY=pt_BR.UTF-8" >> /etc/locale.conf
+echo "LC_PAPER=pt_BR.UTF-8" >> /etc/locale.conf
+echo "LC_NAME=pt_BR.UTF-8" >> /etc/locale.conf
+echo "LC_ADDRESS=pt_BR.UTF-8" >> /etc/locale.conf
+echo "LC_TELEPHONE=pt_BR.UTF-8" >> /etc/locale.conf
+echo "LC_MEASUREMENT=pt_BR.UTF-8" >> /etc/locale.conf
+echo "LC_IDENTIFICATION=pt_BR.UTF-8" >> /etc/locale.conf
+echo "KEYMAP=br-abnt2" >> /etc/vconsole.conf
 echo "Hostname: "
 read hostname
 echo $hostname > /etc/hostname
