@@ -1,19 +1,18 @@
 # == MY ARCH SETUP INSTALLER == #
 #part1
-echo "Welcome to Arch Linux Magic Script"
 pacman --noconfirm -Sy archlinux-keyring
 loadkeys us
 timedatectl set-ntp true
 lsblk
-echo "Enter the drive: "
+echo "Enter the drive (e.g /dev/sda2/):  "
 read drive
 cfdisk $drive 
 echo "Enter the linux partition: "
 read partition
 mkfs.ext4 $partition 
-read -p "Did you also create efi partition? [y/n]" answer
+read -p "Did you also create efi partition? [Y/n]   " answer
 if [[ $answer = y ]] ; then
-  echo "Enter EFI partition: "
+  echo "Enter EFI partition (e.g /dev/sda1/):  "
   read efipartition
   mkfs.vfat -F 32 $efipartition
 fi
@@ -26,12 +25,22 @@ arch-chroot /mnt ./arch_install2.sh
 exit 
 
 #part2
-ln -sf /usr/share/zoneinfo/Asia/Kolkata /etc/localtime
+ln -sf /usr/share/zoneinfo/America/Campo_Grande /etc/localtime
 hwclock --systohc
 echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen
+echo "pt_BR.UTF-8 UTF-8" >> /etc/locale.gen
 locale-gen
 echo "LANG=en_US.UTF-8" > /etc/locale.conf
-echo "KEYMAP=us" > /etc/vconsole.conf
+echo "LC_NUMERIC=pt_BR.UTF-8" > /etc/locale.conf
+echo "LC_TIME=pt_BR.UTF-8" > /etc/locale.conf
+echo "LC_MONETARY=pt_BR.UTF-8" > /etc/locale.conf
+echo "LC_PAPER=pt_BR.UTF-8" > /etc/locale.conf
+echo "LC_NAME=pt_BR.UTF-8" > /etc/locale.conf
+echo "LC_ADDRESS=pt_BR.UTF-8" > /etc/locale.conf
+echo "LC_TELEPHONE=pt_BR.UTF-8" > /etc/locale.conf
+echo "LC_MEASUREMENT=pt_BR.UTF-8" > /etc/locale.conf
+echo "LC_IDENTIFICATION=pt_BR.UTF-8" > /etc/locale.conf
+echo "KEYMAP=br-abnt2" > /etc/vconsole.conf
 echo "Hostname: "
 read hostname
 echo $hostname > /etc/hostname
