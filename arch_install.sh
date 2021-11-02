@@ -41,6 +41,7 @@ echo "LC_TELEPHONE=pt_BR.UTF-8" >> /etc/locale.conf
 echo "LC_MEASUREMENT=pt_BR.UTF-8" >> /etc/locale.conf
 echo "LC_IDENTIFICATION=pt_BR.UTF-8" >> /etc/locale.conf
 echo "KEYMAP=br-abnt2" >> /etc/vconsole.conf
+setxkbmap -model thinkpad -layout br
 echo "Hostname: "
 read hostname
 echo $hostname > /etc/hostname
