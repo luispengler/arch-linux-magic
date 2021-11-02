@@ -61,11 +61,11 @@ pacman -S --noconfirm xorg-server xorg-xinit xorg-xkill xorg-xsetroot xorg-xback
      noto-fonts noto-fonts-emoji noto-fonts-cjk ttf-jetbrains-mono ttf-joypixels ttf-font-awesome \
      sxiv mpv zathura zathura-pdf-mupdf ffmpeg imagemagick  \
      fzf man-db xwallpaper python-pywal youtube-dl unclutter xclip maim \
-     zip unzip unrar p7zip xdotool papirus-icon-theme \
+     zip unzip unrar p7zip xdotool papirus-icon-theme brightnessctl  \
      dosfstools ntfs-3g git sxhkd zsh pipewire pipewire-pulse \
-     vim emacs arc-gtk-theme firefox dash \
+     vim emacs arc-gtk-theme rsync firefox dash \
      xcompmgr libnotify dunst slock jq \
-     dhcpcd networkmanager pamixer
+     dhcpcd networkmanager rsync pamixer
 
 systemctl enable NetworkManager.service 
 rm /bin/sh
@@ -75,6 +75,7 @@ echo "Enter Username: "
 read username
 useradd -m -G wheel -s /bin/zsh $username
 passwd $username
+echo "Pre-Installation Finish Reboot now"
 ai3_path=/home/$username/arch_install3.sh
 sed '1,/^#part3$/d' arch_install2.sh > $ai3_path
 chown $username:$username $ai3_path
@@ -102,8 +103,7 @@ ln -s ~/.config/shell/profile .zprofile
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 mv ~/.oh-my-zsh ~/.config/zsh/oh-my-zsh
 rm ~/.zshrc ~/.zsh_history
-mkdir -p ~/lg ~/vids ~/mus ~/doc ~/code ~/pix/wallpapers ~/tmp ~/drive ~/ead
-chmod +x post-commands.sh
+mkdir -p ~/dl ~/vids ~/music ~/dox ~/code ~/pix/ss
 alias dots='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 dots config --local status.showUntrackedFiles no
 exit
