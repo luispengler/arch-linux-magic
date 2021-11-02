@@ -103,6 +103,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 mv ~/.oh-my-zsh ~/.config/zsh/oh-my-zsh
 rm ~/.zshrc ~/.zsh_history
 mkdir -p ~/lg ~/vids ~/mus ~/doc ~/code ~/pix/wallpapers ~/tmp ~/drive ~/ead
+chmod +x post-installation.sh
 alias dots='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 dots config --local status.showUntrackedFiles no
 exit
