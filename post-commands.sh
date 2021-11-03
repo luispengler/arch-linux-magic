@@ -1,4 +1,4 @@
 #!/bin/sh
 
 setxkbmap -model thinkpad -layout br
-pacman -S --noconfirm discord
+pacman -S --noconfirm discord ripgrep fd
