@@ -24,4 +24,8 @@ git clone --depth 1 https://github.com/matteoguarda/telegram-palette-gen ~/.tele
 cd ~/.telegram-palette-gen
 ./telegram-palette-gen
 cd ~/lg/gitclones/
+git clone https://github.com/FilipLitwora/pywal-discord.git
+cd pywal-discord
+./install
+cd ~/lg/gitclones/
 cd
