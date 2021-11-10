@@ -48,14 +48,19 @@ curl https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/faken
 mkinitcpio -P
 passwd
 pacman --noconfirm -S grub efibootmgr os-prober
-echo "Enter EFI partition: " 
-read efipartition
-mkdir /boot/efi
-mount $efipartition /boot/efi 
-grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=GRUB
-sed -i 's/quiet/pci=noaer/g' /etc/default/grub
-sed -i 's/GRUB_TIMEOUT=5/GRUB_TIMEOUT=0/g' /etc/default/grub
-grub-mkconfig -o /boot/grub/grub.cfg
+read -p "Installing UEFI? [Y/n]   " answer
+if [[ $answer = y ]] ; then
+  echo "Enter EFI partition: " 
+  read efipartition
+  mkdir /boot/efi
+  mount $efipartition /boot/efi 
+  grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=GRUB
+  sed -i 's/quiet/pci=noaer/g' /etc/default/grub
+  sed -i 's/GRUB_TIMEOUT=5/GRUB_TIMEOUT=0/g' /etc/default/grub
+  grub-mkconfig -o /boot/grub/grub.cfg
+fi
+grub-install /dev/nvme0n1
+exit 
 
 pacman -S --noconfirm xorg-server xorg-xinit xorg-xkill xorg-xsetroot xorg-xbacklight xorg-xprop \
      noto-fonts noto-fonts-emoji noto-fonts-cjk ttf-jetbrains-mono ttf-joypixels ttf-font-awesome \
