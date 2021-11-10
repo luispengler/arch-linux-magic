@@ -1,7 +1,7 @@
 #!/bin/sh
 
 setxkbmap -model thinkpad -layout br
-pacman -S --noconfirm discord wget ripgrep fd kdeconnect
+pacman -S --noconfirm discord thunar kdeconnect wget  ripgrep fd
 baph -ianN yay brave-bin #Installs brave and yay
 ## Add entry for doom emacs.
 ## git clone --depth 1 https://github.com/hlissner/doom-emacs ~/.emacs.d
