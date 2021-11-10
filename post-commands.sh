@@ -9,6 +9,10 @@ baph -ianN yay brave-bin #Installs brave and yay
 
 ## Downloading AppImages
 # You should make multiple connections to get faster download
-cd ~/lg/AppImages/Kdenlive
+cd ~/lg/appimages/kdenlive
 wget https://download.kde.org/stable/kdenlive/21.08/linux/kdenlive-21.08.3-x86_64.appimage
+
+## Git Cloning
+cd ~/lg/gitclones/
+git clone
 cd
