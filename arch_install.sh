@@ -4,7 +4,7 @@ pacman --noconfirm -Sy archlinux-keyring
 loadkeys us
 timedatectl set-ntp true
 lsblk
-echo "Enter the drive (e.g /dev/sda2/):  "
+echo "Enter the drive (e.g /dev/sda or /dev/nvme0n1):  "
 read drive
 cfdisk $drive 
 echo "Enter the linux partition: "
