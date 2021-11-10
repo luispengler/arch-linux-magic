@@ -14,5 +14,6 @@ wget https://download.kde.org/stable/kdenlive/21.08/linux/kdenlive-21.08.3-x86_6
 
 ## Git Cloning
 cd ~/lg/gitclones/
-git clone
+git clone https://github.com/arkenfox/user.js.git
+cd user.js
 cd
