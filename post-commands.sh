@@ -15,5 +15,8 @@ wget https://download.kde.org/stable/kdenlive/21.08/linux/kdenlive-21.08.3-x86_6
 ## Git Cloning
 cd ~/lg/gitclones/
 git clone https://github.com/arkenfox/user.js.git
-cd user.js
+git clone --depth 1 https://github.com/matteoguarda/telegram-palette-gen ~/.telegram-palette-gen
+cd ~/.telegram-palette-gen
+./telegram-palette-gen
+cd ~/lg/gitclones/
 cd
