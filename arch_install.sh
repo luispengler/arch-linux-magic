@@ -59,7 +59,9 @@ if [[ $answer = y ]] ; then
   sed -i 's/GRUB_TIMEOUT=5/GRUB_TIMEOUT=0/g' /etc/default/grub
   grub-mkconfig -o /boot/grub/grub.cfg
 fi
-grub-install /dev/nvme0n1
+echo "Enter drive to install grub: "
+read drive
+grub-install $drive
 exit 
 
 pacman -S --noconfirm xorg-server xorg-xinit xorg-xkill xorg-xsetroot xorg-xbacklight xorg-xprop \
