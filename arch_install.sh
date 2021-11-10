@@ -62,6 +62,7 @@ fi
 echo "Enter drive to install grub: "
 read drive
 grub-install $drive
+grub-mkconfig -o /boot/grub/grub.cfg
 exit 
 
 pacman -S --noconfirm xorg-server xorg-xinit xorg-xkill xorg-xsetroot xorg-xbacklight xorg-xprop \
