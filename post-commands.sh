@@ -1,7 +1,7 @@
 #!/bin/sh
 
 setxkbmap -model thinkpad -layout br
-pacman -S --noconfirm emacs discord thunar gvfs transmission-gtk kdeconnect wget python2 xdg-user-dirs ripgrep fd
+pacman -S --noconfirm emacs discord thunar gvfs transmission-gtk kdeconnect wget python2 python-pip xdg-user-dirs ripgrep fd
 baph -ianN yay brave-bin #Installs brave and yay
 ## Add entry for doom emacs.
 ## git clone --depth 1 https://github.com/hlissner/doom-emacs ~/.emacs.d
@@ -15,6 +15,10 @@ baph -i vim-pathogen vim-live-latex-support
 ## XDG User entries
 xdg-user-dirs-update
 ## Add remaining entries (automate this)
+
+## Installing pywalfox
+pip install pywalfox
+~/.local/bin/pywalfox
 
 ## Downloading AppImages
 # You should make multiple connections to get faster download
