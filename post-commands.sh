@@ -1,11 +1,15 @@
 #!/bin/sh
 
 setxkbmap -model thinkpad -layout br
-pacman -S --noconfirm discord thunar kdeconnect wget python2 gvfs textlive-most texlive-lang ripgrep fd
+pacman -S --noconfirm discord thunar kdeconnect wget python2 gvfs ripgrep fd
 baph -ianN yay brave-bin #Installs brave and yay
 ## Add entry for doom emacs.
 ## git clone --depth 1 https://github.com/hlissner/doom-emacs ~/.emacs.d
 ## ~/.emacs.d/bin/doom install
+
+## Installing LaTeX stuff
+pacman -S textlive-most texlive-lang
+baph -i vim-pathogen vim-live-latex-support
 
 ## Downloading AppImages
 # You should make multiple connections to get faster download
