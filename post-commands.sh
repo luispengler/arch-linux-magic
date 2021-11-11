@@ -28,6 +28,8 @@ cd ~/lg/appimages
 mkdir kdenlive
 cd ~/lg/appimages/kdenlive
 wget https://download.kde.org/stable/kdenlive/21.08/linux/kdenlive-21.08.3-x86_64.appimage
+cd ~/lg/appimages/nextcloud
+wget https://github.com/nextcloud/desktop/releases/download/v3.3.6/Nextcloud-3.3.6-x86_64.AppImage
 
 ## Git Cloning
 cd ~/lg/gitclones/ ## Firefox secure profile
