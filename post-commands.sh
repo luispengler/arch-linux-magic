@@ -27,14 +27,15 @@ cd ~/lg/appimages/betterdiscord
 wget https://github.com/BetterDiscord/Installer/releases/latest/download/BetterDiscord-Linux.AppImage
 
 ## Git Cloning
-cd ~/lg/gitclones/
+cd ~/lg/gitclones/ ## Firefox secure profile
 git clone https://github.com/arkenfox/user.js.git
-git clone --depth 1 https://github.com/matteoguarda/telegram-palette-gen ~/.telegram-palette-gen
-cd ~/.telegram-palette-gen
+git clone --depth 1 https://github.com/matteoguarda/telegram-palette-gen ~/.telegram-palette-gen ## Telegram pywal
+cd ~/.telegram-palette-gen 
 ./telegram-palette-gen
+cd ~/lg/gitclones/ ## Speedtest cli
+git clone https://github.com/sivel/speedtest-cli.git
+cd speedtest-cli
+python setup.py install
 cd ~/lg/gitclones/
-git clone https://github.com/FilipLitwora/pywal-discord.git
-cd pywal-discord
-./install
-cd ~/lg/gitclones/
+## 
 cd
