@@ -1,7 +1,8 @@
 #!/bin/sh
 
 setxkbmap -model thinkpad -layout br
-pacman -S --noconfirm emacs ripgrep fd discord thunar gvfs transmission-gtk kdeconnect wget python2 python-pip xdg-user-dirs
+pacman -S --noconfirm emacs ripgrep fd discord thunar gvfs ffmpegthumbnailer tumbler raw-thumbnailer 
+transmission-gtk kdeconnect wget python2 python-pip xdg-user-dirs
 baph -ianN yay brave-bin #Installs brave and yay
 
 ## Add entry for doom emacs.
