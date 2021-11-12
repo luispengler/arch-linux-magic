@@ -29,12 +29,13 @@ pip install pywalfox
 ## Downloading AppImages
 # You should make multiple connections to get faster download
 cd ~/lg/appimages
-mkdir kdenlive
+mkdir kdenlive nextcloud onlyoffice
 cd ~/lg/appimages/kdenlive
 wget https://download.kde.org/stable/kdenlive/21.08/linux/kdenlive-21.08.3-x86_64.appimage
 cd ~/lg/appimages/nextcloud
 wget https://github.com/nextcloud/desktop/releases/download/v3.3.6/Nextcloud-3.3.6-x86_64.AppImage
-
+cd ~/lg/appimages/onlyoffice
+wget https://download.onlyoffice.com/install/desktop/editors/linux/DesktopEditors-x86_64.AppImage
 ## Git Cloning
 cd ~/lg/gitclones/ ## Firefox secure profile
 git clone https://github.com/arkenfox/user.js.git
