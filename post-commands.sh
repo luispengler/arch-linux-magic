@@ -1,10 +1,9 @@
 #!/bin/sh
 
 setxkbmap -model thinkpad -layout br
-pacman -S --noconfirm emacs ripgrep fd discord thunar gvfs ffmpegthumbnailer tumbler raw-thumbnailer 
+pacman -S --noconfirm emacs ripgrep fd discord thunar gvfs ffmpegthumbnailer tumbler raw-thumbnailer poppler-glib gnome-epub-thumbnailer evince
 transmission-gtk kdeconnect wget python2 python-pip xdg-user-dirs
-baph -ianN yay brave-bin #Installs brave and yay
-
+baph -ianN yay brave-bin folderpreview
 ## Add entry for doom emacs.
 cd ~/lg/gitclones
 git clone --depth 1 https://github.com/hlissner/doom-emacs ~/.emacs.d
