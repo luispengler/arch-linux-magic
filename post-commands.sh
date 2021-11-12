@@ -13,6 +13,7 @@ git clone --depth 1 https://github.com/hlissner/doom-emacs ~/.emacs.d
 pacman -S textlive-most texlive-lang
 baph -i vim-pathogen vim-live-latex-support
 cd ~/lg/gitclones/
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 git clone https://github.com/ying17zi/vim-live-latex-preview.git
 mv vim-live-latex-preview ~/.vim/bundle/
 cd
