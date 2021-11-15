@@ -2,7 +2,7 @@
 
 setxkbmap -model thinkpad -layout br
 pacman -S --noconfirm emacs ripgrep fd discord thunar gvfs ffmpegthumbnailer tumbler raw-thumbnailer poppler-glib gnome-epub-thumbnailer evince
-transmission-gtk kdeconnect wget python2 python-pip xdg-user-dirs
+transmission-gtk kdeconnect wget python2 python-pip xdg-user-dirs xf86-video-intel
 baph -ianN yay brave-bin folderpreview
 ## Add entry for doom emacs.
 cd ~/lg/gitclones
