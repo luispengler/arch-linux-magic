@@ -2,7 +2,7 @@
 
 setxkbmap -model thinkpad -layout br
 pacman -S --noconfirm emacs ripgrep fd discord thunar gvfs ffmpegthumbnailer tumbler raw-thumbnailer poppler-glib gnome-epub-thumbnailer evince
-transmission-gtk kdeconnect wget python2 python-pip xdg-user-dirs xf86-video-intel
+transmission-gtk kdenlive shotcut wget python2 python-pip xdg-user-dirs xf86-video-intel
 baph -ianN yay brave-bin folderpreview
 ## Add entry for doom emacs.
 cd ~/lg/gitclones
@@ -28,7 +28,7 @@ pip install pywalfox
 ## Downloading AppImages
 # You should make multiple connections to get faster download
 cd ~/lg/appimages
-mkdir kdenlive nextcloud libreoffice
+mkdir kdenlive nextcloud libreoffice shotcut
 cd ~/lg/appimages/kdenlive
 wget https://download.kde.org/stable/kdenlive/21.08/linux/kdenlive-21.08.3-x86_64.appimage
 cd ~/lg/appimages/nextcloud
@@ -47,4 +47,6 @@ cd speedtest-cli
 python setup.py install
 cd ~/lg/gitclones/
 ## 
+cd ~/lg/shotcut/ ## Shotcut
+wget https://github.com/mltframework/shotcut/releases/download/v21.09.20/shotcut-linux-x86_64-210920.AppImage
 cd
