@@ -46,6 +46,10 @@ git clone https://github.com/sivel/speedtest-cli.git
 cd speedtest-cli
 python setup.py install
 cd ~/lg/gitclones/
+git clone https://github.com/GideonWolfe/Zathura-Pywal.git
+cd Zathura-Pywal/
+./install.sh
+cd ~/lg/gitclones/
 ## 
 cd ~/lg/shotcut/ ## Shotcut
 wget https://github.com/mltframework/shotcut/releases/download/v21.09.20/shotcut-linux-x86_64-210920.AppImage
