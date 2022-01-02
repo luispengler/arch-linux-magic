@@ -49,6 +49,10 @@ cd ~/lg/gitclones/
 git clone https://github.com/GideonWolfe/Zathura-Pywal.git
 cd Zathura-Pywal/
 ./install.sh
+cd ~/lg/gitclones/ ## Doas
+git clone https://aur.archlinux.org/doas.git
+cd doas
+makepkg -si
 cd ~/lg/gitclones/
 ## 
 cd ~/lg/shotcut/ ## Shotcut
