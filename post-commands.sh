@@ -53,6 +53,7 @@ cd ~/lg/gitclones/ ## Doas
 git clone https://aur.archlinux.org/doas.git
 cd doas
 makepkg -si
+echo permit nopass luispengler as root > /etc/doas.conf
 cd ~/lg/gitclones/
 ## 
 cd ~/lg/shotcut/ ## Shotcut
