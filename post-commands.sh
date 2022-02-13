@@ -10,7 +10,7 @@ git clone --depth 1 https://github.com/hlissner/doom-emacs ~/.emacs.d
 ~/.emacs.d/bin/doom install
 
 ## Installing LaTeX stuff
-pacman -S textlive-most texlive-lang
+pacman -S textlive-most texlive-lang biber
 baph -i vim-pathogen vim-live-latex-support
 cd ~/lg/gitclones/
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
